@@ -29,6 +29,13 @@ body{
     justify-content:right;
     align-items:center;
     z-index: 200;
+    transition: 1s;
+    
+   
+}
+/* transicion del nav en todas las pag */
+.nav-container:hover {
+    background-color: greenyellow;
    
 }
 
@@ -47,7 +54,17 @@ body{
 
 /* Enlaces de redireccion en el contenedor */
 .nav-container__ul a{
-    margin: 0 15px;
+    margin:15px;
+    padding:15px;
+}
+
+}
+
+/* palabras dentro del nav */
+.nav-container__ul a:hover {
+    background-color:greenyellow;
+    color:black;
+    padding: 15px;
 }
 
 /* Titulo */
@@ -70,8 +87,15 @@ body{
     margin-top: 10px;
     background-color:darkgray;
     margin-bottom: 100px;
+    transition: transform 5s;
+    transform: translate(50px);
+   
 }
-
+/* TRANSFOMRACION DEL CONTENEDOR DEL USUARIO */
+.user-container:hover {
+    transform: scalex(1.3) scaleY(1.3) translate(40px);
+    margin-left: 100px;
+}
 
 /* Titulo del iniciar sesion*/
 .user-container__h3 {
